@@ -5,6 +5,7 @@
 1. [Overview](#overview)
 1. [Installation](#installation)
 1. [Configuration](#configuration)
+1. [Customization](#customization)
 1. [Removal](#removal)
 1. [Support](#support)
 1. [Changelog](#changelog)
@@ -85,6 +86,34 @@ Obsidian is required for some features but is not necessary to view the Obsidian
 ### Discogs Queries
 
 The Obsidian Discogs Vault has been curated with metadata allowing queries to be performed using the Obsidian Dataview plugin. Sample queries along with the code used to perform them can be viewed in the [Discogs Queries](https://github.com/doctorfree/Obsidian-Discogs-Vault/Discogs_Queries.md) document.
+
+## Customization
+
+Scripts included with the Obsidian Discogs Vault make it possible to customize the vault with your personal Discogs collection. If you have a Discogs account and have curated a Discogs collection there, then you can run the Obsidian Discogs Vault scripts to generate vault markdown reflecting your Discogs collection. These instructions will setup an automated workflow to retrieve your Discogs collection via the Discogs API and generate markdown from that collection.
+
+The Discogs API requires a Discogs username and, optionally, a Discogs API token. These can be found in your Discogs account and placed in the file `$HOME/.config/mpprc` as follows:
+
+```shell
+# The Discogs username can be found by visiting discogs.com. Login, use the
+# dropdown of your user icon in the upper right corner, click on 'Profile'.
+# Your Discogs username is the last component of the profile URL. IF you do
+# not have a Discogs account, leave blank.
+DISCOGS_USER=your_discogs_username
+# The Discogs API token can be found by visiting
+# https://www.discogs.com/settings/developers
+DISCOGS_TOKEN="your_discogs_api_token"
+```
+
+After configuring your Discogs username and API token, generate markdown for your Discogs collection by running the following commands:
+
+```console
+cd Tools/Discogs
+./mkdiscogs -a
+```
+
+The resulting markdown and cover art can be found in the `username` and `assets` folders where `username` is your capitalized Discogs username.
+
+**[Note:]** For large Discogs collections this process can take a while.
 
 ## Removal
 
