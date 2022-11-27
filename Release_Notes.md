@@ -16,7 +16,7 @@ The Obsidian Discogs Vault is an [Obsidian](https://obsidian.md) vault containin
 
 The `Obsidian-Discogs-Vault` repository reflects the contents of my Discogs collection. The process by which this repository was created and curated as well as the tools used in its creation and curation may be useful to other with a Discogs collection. I am making it public and freely licensed so that others may examine, adapt, clone, and use in whatever manner they choose. See the [description of Process](https://github.com/doctorfree/Obsidian-Discogs-Vault/Process.md) for an overview of the process and tools employed in the creation of this repository.
 
-These are the release notes for Version 1.0.0 Release 1 of the Obsidian Discogs Vault.
+These are the release notes for Version 1.0.0 Release 2 of the Obsidian Discogs Vault.
 
 ## Installation
 
@@ -37,8 +37,8 @@ The Obsidian Discogs Vault can be installed on Windows, Mac, or Linux. The follo
 Those familiar with `wget` can download this release from the command line with:
 
 ```shell
-wget --quiet -O ~/Downloads/Obsidian-Discogs-Vault-v1.0.0r1.tar.gz \
-  https://github.com/doctorfree/Obsidian-Discogs-Vault/archive/refs/tags/v1.0.0r1.tar.gz
+wget --quiet -O ~/Downloads/Obsidian-Discogs-Vault-v1.0.0r2.tar.gz \
+  https://github.com/doctorfree/Obsidian-Discogs-Vault/archive/refs/tags/v1.0.0r2.tar.gz
 ```
 
 ### Extract the release archive
@@ -49,35 +49,35 @@ To extract the ZIP archive:
 
 ```shell
 cd /path/to/your/vaults # e.g. `cd ~/Documents/Obsidian`
-unzip /path/to/Obsidian-Discogs-Vault-1.0.0r1.zip
+unzip /path/to/Obsidian-Discogs-Vault-1.0.0r2.zip
 ```
 
 To extract the compressed tar archive:
 
 ```shell
 cd /path/to/your/vaults # e.g. `cd ~/Documents`
-tar xf /path/to/Obsidian-Discogs-Vault-1.0.0r1.tar.gz
+tar xf /path/to/Obsidian-Discogs-Vault-1.0.0r2.tar.gz
 ```
 
-Once extracted, the Obsidian Discogs Vault is now available in `/path/to/your/vaults/Obsidian-Discogs-Vault-1.0.0r1/`.
+Once extracted, the Obsidian Discogs Vault is now available in `/path/to/your/vaults/Obsidian-Discogs-Vault-1.0.0r2/`.
 
 The downloaded archive can be deleted:
 
 ```shell
-rm -f /path/to/Obsidian-Discogs-Vault-1.0.0r1.zip
+rm -f /path/to/Obsidian-Discogs-Vault-1.0.0r2.zip
 ```
 
 or
 
 ```shell
-rm -f /path/to/Obsidian-Discogs-Vault-1.0.0r1.tar.gz
+rm -f /path/to/Obsidian-Discogs-Vault-1.0.0r2.tar.gz
 ```
 
 ## Configuration
 
 The Obsidian Discogs Vault is pre-configured for use with [Obsidian](https://obsidian.md). Install Obsidian for your platform by clicking the appropriate installation link at the Obsidian website. Obsidian is available for Windows, Mac, and Linux as well as mobile devices.
 
-Add a new vault in Obsidian with `Open folder as vault` and navigate to the `Obsidian-Discogs-Vault-1.0.0r1` extracted folder. When prompted, `Trust` and enable the `Dataview` plugin if it is not already enabled.
+Add a new vault in Obsidian with `Open folder as vault` and navigate to the `Obsidian-Discogs-Vault-1.0.0r2` extracted folder. When prompted, `Trust` and enable the `Dataview` plugin if it is not already enabled.
 
 The Obsidian Discogs Vault includes the `Doctorfree` Obsidian theme. Enable this Obsidian theme in Obsidian by visiting `Settings -> Appearance` and selecting `Doctorfree` from the dropdown in the `Themes` section.
 
@@ -96,8 +96,7 @@ The Discogs API requires a Discogs username and, optionally, a Discogs API token
 ```shell
 # The Discogs username can be found by visiting discogs.com. Login, use the
 # dropdown of your user icon in the upper right corner, click on 'Profile'.
-# Your Discogs username is the last component of the profile URL. IF you do
-# not have a Discogs account, leave blank.
+# Your Discogs username is the last component of the profile URL.
 DISCOGS_USER=your_discogs_username
 # The Discogs API token can be found by visiting
 # https://www.discogs.com/settings/developers
@@ -121,7 +120,7 @@ To remove the Obsidian Discogs Vault simply remove the extracted folder and its 
 
 ```shell
 cd /path/to/your/vaults # e.g. `cd ~/Documents/Obsidian`
-rm -rf Obsidian-Discogs-Vault-1.0.0r1
+rm -rf Obsidian-Discogs-Vault-1.0.0r2
 ```
 
 ## Support
@@ -132,4 +131,4 @@ Support the development and improvement of the Obsidian Discogs Vault by [sponso
 
 ## Changelog
 
-View the full changelog for this release at https://github.com/doctorfree/Obsidian-Discogs-Vault/blob/v1.0.0r1/CHANGELOG.md
+View the full changelog for this release at https://github.com/doctorfree/Obsidian-Discogs-Vault/blob/v1.0.0r2/CHANGELOG.md

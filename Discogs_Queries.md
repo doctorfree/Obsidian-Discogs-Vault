@@ -45,7 +45,7 @@ TABLE WITHOUT ID
   link(file.link, album) as Album,
   artist AS "Artist",
   year AS "Year"
-FROM "Discogs"
+FROM "Doctorfree"
 WHERE artist = "Yes" and year < 1980
 SORT year ASC
 ```
@@ -58,7 +58,7 @@ TABLE WITHOUT ID
   link(file.link, album) as Album,
   artist AS "Artist",
   year AS "Year"
-FROM "Discogs"
+FROM "Doctorfree"
 WHERE artist = "Yes" and year < 1980
 SORT year ASC
 ```
@@ -68,7 +68,7 @@ As a list grouped by artist rather than a table, the following dataview codebloc
 ````markdown
 ```dataview
 LIST link(rows.file.link, rows.album)
-FROM "Discogs"
+FROM "Doctorfree"
 WHERE (artist = "Yes" OR artist = "XTC") AND
       year < 1990
 GROUP BY "**" + artist + "**"
@@ -79,7 +79,7 @@ Would list all albums by Yes or XTC released prior to 1990:
 
 ```dataview
 LIST link(rows.file.link, rows.album)
-FROM "Discogs"
+FROM "Doctorfree"
 WHERE (artist = "Yes" OR artist = "XTC") AND
       year < 1990
 GROUP BY "**" + artist + "**"
