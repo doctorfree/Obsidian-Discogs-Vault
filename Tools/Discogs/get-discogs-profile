@@ -19,9 +19,7 @@ DUSER="${DISCOGS_USER^}"
 URL="https://api.discogs.com"
 USR="${URL}/users/${DISCOGS_USER}"
 VAL="${URL}/users/${DISCOGS_USER}/collection/value"
-
 AGE="github.com/doctorfree/MusicPlayerPlus"
-UAG="--user-agent \"MusicPlayerPlus/3.0\""
 
 # Retrieve user profile
 profile=$(curl --stderr /dev/null \
